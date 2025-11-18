@@ -27,10 +27,9 @@ require __DIR__.'/../../helpers/functions.php';
       
       <h1 class="text-4xl font-semibold">RigbyStore</h1>
       
-
       <!-- Menú de escritorio -->
       <ul class="hidden md:flex space-x-5">
-        <li><a href="<?=BASE_PATH?>" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Lanzamientos</a></li>
+        <li><a href="<?=BASE_PATH?>/index.php" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Lanzamientos</a></li>
         <li><a href="#" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Sobre Nosotros</a></li>
         <li><a href="#" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Lista de correos</a></li>
       </ul>
