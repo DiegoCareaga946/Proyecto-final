@@ -21,8 +21,8 @@
 
           <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <?php foreach($productos as $producto) : ?>
-              <div class="bg-[#DC9D5A] rounded-xl shadow-md hover:shadow-lg ">
-                <img src="<?=ASSETS_PATH?>/img/<?=$producto['imagen']?>" alt="<?=$producto['nombre']?>" class="w-100 h-100 rounded-lg">
+              <div class="bg-[#DC9D5A] justify-items-center rounded-xl shadow-md hover:shadow-lg">
+                <img src="<?=ASSETS_PATH?>/img/<?=$producto['imagen']?>" alt="<?=$producto['nombre']?>" class="w-80 h-80 rounded-lg mt-8">
                 <div class="p-6 text-center">
                   <h3 class="text-2xl font-semibold mb-2 text-white"><?=$producto['nombre']?></h3>
                   <hr class="py-2">
@@ -30,7 +30,7 @@
                       <?= $producto['descripcion'] ?>
                   </p>
                   <div class="m-4">
-                    <a href="<?=SRC_PATH?>/views/producto.php" class="bg-[#906646] font-bold cursor-pointer rounded-lg p-3 hover:text-[#906646] hover:bg-white transition">VER MAS</a>
+                    <a href="<?=BASE_PATH?>/producto.php?id=<?=$producto['id']?>" class="bg-[#906646] font-bold cursor-pointer rounded-lg p-3 hover:text-[#906646] hover:bg-white transition">VER MAS</a>
                   </div>
                 </div>
               </div>

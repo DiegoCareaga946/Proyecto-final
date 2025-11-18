@@ -30,9 +30,9 @@ require __DIR__.'/../../helpers/functions.php';
 
       <!-- Menú de escritorio -->
       <ul class="hidden md:flex space-x-5">
-        <li><a href="<?=BASE_PATH?>" class="text-[#F9F0BA] font-semibold hover:text-white hover:underline">Lanzamientos</a></li>
-        <li><a href="#" class="text-[#F9F0BA] font-semibold hover:text-white hover:underline">Sobre Nosotros</a></li>
-        <li><a href="#" class="text-[#F9F0BA] font-semibold hover:text-white hover:underline">Lista de correos</a></li>
+        <li><a href="<?=BASE_PATH?>" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Lanzamientos</a></li>
+        <li><a href="#" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Sobre Nosotros</a></li>
+        <li><a href="#" class="text-[#F9F0BA] text-xl font-semibold hover:text-white hover:underline">Lista de correos</a></li>
       </ul>
       <?php
       $imagen = "/img/carrito_compra.png";
@@ -46,9 +46,9 @@ require __DIR__.'/../../helpers/functions.php';
     <!-- Menú móvil -->
     <div class="max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-500 md:hidden bg-[#DC9D5A]">
       <ul class="flex flex-col text-center space-y-2 py-3 text-white">
-        <li><a href="<?=BASE_PATH?>" class="block py-2 hover:text-blue-100">Inicio</a></li>
-        <li><a href="#" class="block py-2 hover:text-blue-100">Sobre Nosotros</a></li>
-        <li><a href="#" class="block py-2 hover:text-blue-100">Lista de correos</a></li>
+        <li><a href="<?=BASE_PATH?>" class="block py-2 text-xl hover:text-blue-100">Lanzamientos</a></li>
+        <li><a href="#" class="block py-2 text-xl hover:text-blue-100">Sobre Nosotros</a></li>
+        <li><a href="#" class="block py-2 text-xl hover:text-blue-100">Lista de correos</a></li>
       </ul>
     </div>
   </nav>
