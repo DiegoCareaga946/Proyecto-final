@@ -1,9 +1,8 @@
 <?php 
   include '../src/views/layout/header.php';
-  $productos = getProductos();
+
+  $productos = getProducts();
 ?>
-
-
   <main class="flex-grow">
     <header class="relative bg-gradient-to-t from-[#F9F0BA] to-[#DC9D5A] text-center py-16 px-4">
       <div class="relative z-20 text-center py-16 px-4">
@@ -22,7 +21,7 @@
           <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <?php foreach($productos as $producto) : ?>
               <div class="bg-[#DC9D5A] justify-items-center rounded-xl shadow-md hover:shadow-lg">
-                <img src="<?=ASSETS_PATH?>/img/<?=$producto['imagen']?>" alt="<?=$producto['nombre']?>" class="w-80 h-80 rounded-lg mt-8">
+                <img src="data:image/jpeg;base64,<?= base64_encode($producto['imagen'])?>" alt="<?=$producto['nombre']?>" class="w-80 h-80 rounded-lg mt-8">
                 <div class="p-6 text-center">
                   <h3 class="text-2xl font-semibold mb-2 text-white"><?=$producto['nombre']?></h3>
                   <hr class="py-2">

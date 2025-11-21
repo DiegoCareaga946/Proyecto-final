@@ -1,0 +1,17 @@
+{
+    "name": "marca/proyecto-final",
+    "autoload": {
+        "psr-4": {
+            "Marca\\ProyectoFinal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DiegoCareaga946",
+            "email": "dcareaga_23@alu.uabcs.mx"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
